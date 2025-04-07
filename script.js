@@ -14,7 +14,7 @@ function sendMessage() {
   const question = input.value.toLowerCase().trim();
   const conversation = document.getElementById("conversation");
 
-  let response = respuestas[question] || "Lo siento, no entiendo la pregunta.";
+  let response = respuestas[question] || "Lo siento, Luis Echeverría no pudo entender tu pregunta.";
   
   conversation.innerHTML += `<p><strong>Tú:</strong> ${question}</p>`;
   conversation.innerHTML += `<p><strong>Luis Echeverría:</strong> ${response}</p>`;
